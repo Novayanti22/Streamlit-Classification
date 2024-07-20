@@ -39,7 +39,6 @@ def save_patient_data(data):
         df = pd.DataFrame(columns=['Nama Pasien', 'Jenis Kelamin', 'Age', 'BMI', 'Glucose', 'Insulin', 'HOMA', 'Leptin', 'Adiponectin', 'Resistin', 'MCP1', 'Prediction'])
         df.to_csv('patient_data.csv', index=False)
     
-     data_df = pd.DataFrame([data])
     df = pd.read_csv('patient_data.csv')
     df = pd.concat([df, pd.DataFrame([data])], ignore_index=True)
     df.to_csv('patient_data.csv', index=False)
