@@ -1,4 +1,8 @@
-pandas==1.4.4
-numpy==1.21.5
+numpy==1.25.2
+pandas==2.0.3
 streamlit
-sklearn
+seaborn
+matplotlib
+scikit-learn
+pip==23.1.2
+wordcloud
