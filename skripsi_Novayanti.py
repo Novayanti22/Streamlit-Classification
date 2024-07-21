@@ -43,12 +43,6 @@ def save_patient_data(data):
     df = pd.concat([df, pd.DataFrame([data])], ignore_index=True)
     df.to_csv('patient_data.csv', index=False)
 
-# Fungsi untuk menghapus data pasien dari file CSV
-def delete_patient_data(index):
-    if os.path.isfile('patient_data.csv'):
-        df = pd.read_csv('patient_data.csv')
-        df = df.drop(index)
-        df.to_csv('patient_data.csv', index=False)
 
 # Halaman utama aplikasi
 def home_page():
